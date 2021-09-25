@@ -59,6 +59,9 @@ public class Blocker implements Listener {
 		if (!set.getEntities().contains(e.getType())) {
 			return;
 		}
+		if(event.getSpawnReason().equals(CreatureSpawnEvent.SpawnReason.COMMAND)) {
+			return;
+		}
 		if (!set.shouldExist(e)) {
 			event.setCancelled(true);
 		} else if (rand.nextDouble() > set.getRatio(e.getType())) {
