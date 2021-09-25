@@ -1,4 +1,4 @@
-/**
+/*
  * Bukkit plugin which moves the mobs closer to the players.
  * Copyright (C) 2016 Jakub "Co0sh" Sapalski
  * 
@@ -20,6 +20,7 @@ package pl.betoncraft.hordes;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
+import org.jetbrains.annotations.NotNull;
 
 /**
  * Reloads the plugin.
@@ -28,7 +29,7 @@ import org.bukkit.command.CommandSender;
  */
 public class ReloadCommand implements CommandExecutor {
 	
-	private Hordes plugin;
+	private final Hordes plugin;
 
 	public ReloadCommand(Hordes plugin) {
 		this.plugin = plugin;
@@ -36,8 +37,9 @@ public class ReloadCommand implements CommandExecutor {
 	}
 
 	@Override
-	public boolean onCommand(CommandSender sender, Command cmd,
-			String label, String[] args) {
+	public boolean onCommand(
+			@NotNull CommandSender sender, Command cmd,
+			@NotNull String label, String[] args) {
 		if (cmd.getName().equalsIgnoreCase("hordesreload")) {
 			plugin.load();
 			sender.sendMessage("Reloaded!");

@@ -1,4 +1,4 @@
-/**
+/*
  * Bukkit plugin which moves the mobs closer to the players.
  * Copyright (C) 2016 Jakub "Co0sh" Sapalski
  * 
@@ -25,7 +25,7 @@ package pl.betoncraft.hordes;
 public class LoadingException extends Exception {
 	
 	private static final long serialVersionUID = 5197545070386342207L;
-	private String message; 
+	private final String message;
 	
 	public LoadingException(String message) {
 		this.message = message;

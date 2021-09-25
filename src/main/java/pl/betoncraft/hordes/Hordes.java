@@ -1,4 +1,4 @@
-/**
+/*
  * Bukkit plugin which moves the mobs closer to the players.
  * Copyright (C) 2016 Jakub "Co0sh" Sapalski
  * 
@@ -31,7 +31,7 @@ import org.bukkit.plugin.java.JavaPlugin;
  */
 public class Hordes extends JavaPlugin {
 	
-	private HashMap<String, WorldSettings> worlds = new HashMap<>();
+	private final HashMap<String, WorldSettings> worlds = new HashMap<>();
 	
 	private Blocker blocker;
 	private Despawner despawner;

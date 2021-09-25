@@ -1,4 +1,4 @@
-/**
+/*
  * Bukkit plugin which moves the mobs closer to the players.
  * Copyright (C) 2016 Jakub "Co0sh" Sapalski
  * 

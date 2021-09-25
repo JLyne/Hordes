@@ -1,4 +1,4 @@
-/**
+/*
  * Bukkit plugin which moves the mobs closer to the players.
  * Copyright (C) 2016 Jakub "Co0sh" Sapalski
  * 
@@ -34,9 +34,9 @@ import org.bukkit.event.entity.CreatureSpawnEvent;
  */
 public class Blocker implements Listener {
 	
-	private Hordes plugin;
+	private final Hordes plugin;
 	
-	private Random rand = new Random();
+	private final Random rand = new Random();
 	
 	/**
 	 * Starts the blocker.

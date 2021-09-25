@@ -1,4 +1,4 @@
-/**
+/*
  * Bukkit plugin which moves the mobs closer to the players.
  * Copyright (C) 2016 Jakub "Co0sh" Sapalski
  * 
@@ -35,12 +35,12 @@ import org.bukkit.entity.Player;
  */
 public class WorldSettings {
 
-	private String world;
-	private double height;
-	private double spawnRadius;
-	private ArrayList<EntityType> entities = new ArrayList<>();
-	private HashMap<EntityType, Double> health = new HashMap<>();
-	private HashMap<EntityType, Double> ratio = new HashMap<>();
+	private final String world;
+	private final double height;
+	private final double spawnRadius;
+	private final ArrayList<EntityType> entities = new ArrayList<>();
+	private final HashMap<EntityType, Double> health = new HashMap<>();
+	private final HashMap<EntityType, Double> ratio = new HashMap<>();
 
 	/**
 	 * Loads the settings for a world.
